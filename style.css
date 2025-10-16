@@ -14,3 +14,25 @@ p}
 font-sizes:25px;
 header { 
     border-bottom:solid 3x chocolate 10px. 35 ;
+margin: 2px; 
+padding: 10px;
+color:
+}
+.chamada-texto{
+  background-color: aliceblue;
+  padding-bottom: 80px;
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+.chamada-texto{
+  margin-right: 8px;
+}
+img{
+  height: 200px;
+}
+.categoria-videos{
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+}
