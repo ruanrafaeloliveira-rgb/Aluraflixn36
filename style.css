@@ -35,4 +35,13 @@ img{
   display: flex;
   overflow-x: auto;
   gap: 15px;
+  padding:20px;
+  scroll-behavior:smooth;
+}
+.categoria-videos ::-webkit-scrollbar{
+  height: 8px;
+} 
+.categoria-videos.categoria-videos::-webkit-scrollbar-thvmb{
+background-color: blue;
+border-radius: 4px;
 }
