@@ -8,52 +8,51 @@ body {
 h1 {
   color: azure;
   font-size: 40px;
-
 }
 
-    p{
-font-size: 25px;
-    }
-  
+p {
+  font-size: 25px;
+}
 
-  font-sizes:25px;
+header {
+  /* A propriedade border estava incorreta */
+  /* Formato correto: border: <largura> <estilo> <cor>; */
+  border-bottom: 3px solid chocolate;
+  margin: 2px;
+  padding: 10px;
 
-  header {
-    border-bottom: solid 3x chocolate 10px. 35;
-    margin: 2px;
-    padding: 10px;
-    color:
-  }
+  /* Aqui faltava o valor */
+  color: black;
+}
 
-  .chamada-texto {
-    background-color: aliceblue;
-    padding-bottom: 80px;
-    padding-top: 80px;
-    display: flex;
-    justify-content: center;
-  }
+.chamada-texto {
+  background-color: aliceblue;
+  padding-bottom: 80px;
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  margin-right: 8px; /* juntar duplicado */
+}
 
-  .chamada-texto {
-    margin-right: 8px;
-  }
+img {
+  height: 200px;
+}
 
-  img {
-    height: 200px;
-  }
+.categoria-videos {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 20px;
+  scroll-behavior: smooth;
+}
 
-  .categoria-videos {
-    display: flex;
-    overflow-x: auto;
-    gap: 15px;
-    padding: 20px;
-    scroll-behavior: smooth;
-  }
+/* scrollbar */
+.categoria-videos::-webkit-scrollbar {
+  height: 8px;
+}
 
-  .categoria-videos ::-webkit-scrollbar {
-    height: 8px;
-  }
-
-  .categoria-videos.categoria-videos::-webkit-scrollbar-thvmb {
-    background-color: blue;
-    border-radius: 4px;
-  }
+/* havia erro no nome do pseudo-elemento: "thvmb" */
+.categoria-videos::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border-radius: 4px;
+}
